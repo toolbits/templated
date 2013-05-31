@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C329498C1758DBE7001190E6 /* ExtentManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C32949721758DBE7001190E6 /* ExtentManager.cpp */; };
+		C329498D1758DBE7001190E6 /* getmntopts.c in Sources */ = {isa = PBXBuildFile; fileRef = C32949751758DBE7001190E6 /* getmntopts.c */; };
+		C329498E1758DBE7001190E6 /* humanize_number.c in Sources */ = {isa = PBXBuildFile; fileRef = C32949771758DBE7001190E6 /* humanize_number.c */; };
+		C329498F1758DBE7001190E6 /* pidfile.c in Sources */ = {isa = PBXBuildFile; fileRef = C32949811758DBE7001190E6 /* pidfile.c */; };
+		C32949901758DBE7001190E6 /* realhostname.c in Sources */ = {isa = PBXBuildFile; fileRef = C32949831758DBE7001190E6 /* realhostname.c */; };
+		C32949911758DBE7001190E6 /* reexec_to_match_kernel.c in Sources */ = {isa = PBXBuildFile; fileRef = C32949861758DBE7001190E6 /* reexec_to_match_kernel.c */; };
+		C32949921758DBE7001190E6 /* trimdomain.c in Sources */ = {isa = PBXBuildFile; fileRef = C32949881758DBE7001190E6 /* trimdomain.c */; };
+		C32949931758DBE7001190E6 /* wipefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C329498A1758DBE7001190E6 /* wipefs.cpp */; };
+		C329499B1758DCF3001190E6 /* framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C32949971758DCF3001190E6 /* framework.cpp */; };
+		C329499C1758DCF3001190E6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C32949991758DCF3001190E6 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C32949951758DBE8001190E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C329497C1758DBE7001190E6 /* libutil.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BA79F9C513BB718B006A292D;
+			remoteInfo = util;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C329495E1758DB15001190E6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C32949601758DB15001190E6 /* templated */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = templated; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32949721758DBE7001190E6 /* ExtentManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExtentManager.cpp; sourceTree = "<group>"; };
+		C32949731758DBE7001190E6 /* ExtentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtentManager.h; sourceTree = "<group>"; };
+		C32949751758DBE7001190E6 /* getmntopts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getmntopts.c; sourceTree = "<group>"; };
+		C32949771758DBE7001190E6 /* humanize_number.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = humanize_number.c; sourceTree = "<group>"; };
+		C32949791758DBE7001190E6 /* libutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libutil.h; sourceTree = "<group>"; };
+		C329497C1758DBE7001190E6 /* libutil.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = libutil.xcodeproj; sourceTree = "<group>"; };
+		C329497F1758DBE7001190E6 /* mntopts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mntopts.h; sourceTree = "<group>"; };
+		C32949811758DBE7001190E6 /* pidfile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pidfile.c; sourceTree = "<group>"; };
+		C32949831758DBE7001190E6 /* realhostname.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = realhostname.c; sourceTree = "<group>"; };
+		C32949861758DBE7001190E6 /* reexec_to_match_kernel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reexec_to_match_kernel.c; sourceTree = "<group>"; };
+		C32949881758DBE7001190E6 /* trimdomain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trimdomain.c; sourceTree = "<group>"; };
+		C329498A1758DBE7001190E6 /* wipefs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wipefs.cpp; sourceTree = "<group>"; };
+		C329498B1758DBE7001190E6 /* wipefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wipefs.h; sourceTree = "<group>"; };
+		C32949971758DCF3001190E6 /* framework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = framework.cpp; sourceTree = "<group>"; };
+		C32949981758DCF3001190E6 /* framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = framework.h; sourceTree = "<group>"; };
+		C32949991758DCF3001190E6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C329499A1758DCF3001190E6 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C329495D1758DB15001190E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C32949571758DB15001190E6 = {
+			isa = PBXGroup;
+			children = (
+				C32949621758DB15001190E6 /* templated */,
+				C32949701758DB94001190E6 /* libs */,
+				C32949611758DB15001190E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C32949611758DB15001190E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C32949601758DB15001190E6 /* templated */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C32949621758DB15001190E6 /* templated */ = {
+			isa = PBXGroup;
+			children = (
+				C329499A1758DCF3001190E6 /* main.h */,
+				C32949991758DCF3001190E6 /* main.cpp */,
+				C32949981758DCF3001190E6 /* framework.h */,
+				C32949971758DCF3001190E6 /* framework.cpp */,
+			);
+			path = templated;
+			sourceTree = "<group>";
+		};
+		C32949701758DB94001190E6 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				C32949711758DBE7001190E6 /* libutil-30 */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		C32949711758DBE7001190E6 /* libutil-30 */ = {
+			isa = PBXGroup;
+			children = (
+				C32949721758DBE7001190E6 /* ExtentManager.cpp */,
+				C32949731758DBE7001190E6 /* ExtentManager.h */,
+				C32949751758DBE7001190E6 /* getmntopts.c */,
+				C32949771758DBE7001190E6 /* humanize_number.c */,
+				C32949791758DBE7001190E6 /* libutil.h */,
+				C329497C1758DBE7001190E6 /* libutil.xcodeproj */,
+				C329497F1758DBE7001190E6 /* mntopts.h */,
+				C32949811758DBE7001190E6 /* pidfile.c */,
+				C32949831758DBE7001190E6 /* realhostname.c */,
+				C32949861758DBE7001190E6 /* reexec_to_match_kernel.c */,
+				C32949881758DBE7001190E6 /* trimdomain.c */,
+				C329498A1758DBE7001190E6 /* wipefs.cpp */,
+				C329498B1758DBE7001190E6 /* wipefs.h */,
+			);
+			path = "libutil-30";
+			sourceTree = "<group>";
+		};
+		C329497D1758DBE7001190E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C32949961758DBE8001190E6 /* libutil1.0.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C329495F1758DB15001190E6 /* templated */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C32949691758DB15001190E6 /* Build configuration list for PBXNativeTarget "templated" */;
+			buildPhases = (
+				C329495C1758DB15001190E6 /* Sources */,
+				C329495D1758DB15001190E6 /* Frameworks */,
+				C329495E1758DB15001190E6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = templated;
+			productName = templated;
+			productReference = C32949601758DB15001190E6 /* templated */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C32949581758DB15001190E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = administrator;
+			};
+			buildConfigurationList = C329495B1758DB15001190E6 /* Build configuration list for PBXProject "templated" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C32949571758DB15001190E6;
+			productRefGroup = C32949611758DB15001190E6 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C329497D1758DBE7001190E6 /* Products */;
+					ProjectRef = C329497C1758DBE7001190E6 /* libutil.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C329495F1758DB15001190E6 /* templated */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C32949961758DBE8001190E6 /* libutil1.0.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libutil1.0.dylib;
+			remoteRef = C32949951758DBE8001190E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C329495C1758DB15001190E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C329498C1758DBE7001190E6 /* ExtentManager.cpp in Sources */,
+				C329498D1758DBE7001190E6 /* getmntopts.c in Sources */,
+				C329498E1758DBE7001190E6 /* humanize_number.c in Sources */,
+				C329498F1758DBE7001190E6 /* pidfile.c in Sources */,
+				C32949901758DBE7001190E6 /* realhostname.c in Sources */,
+				C32949911758DBE7001190E6 /* reexec_to_match_kernel.c in Sources */,
+				C32949921758DBE7001190E6 /* trimdomain.c in Sources */,
+				C32949931758DBE7001190E6 /* wipefs.cpp in Sources */,
+				C329499B1758DCF3001190E6 /* framework.cpp in Sources */,
+				C329499C1758DCF3001190E6 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C32949671758DB15001190E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libutil-30\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		C32949681758DB15001190E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libutil-30\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		C329496A1758DB15001190E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C329496B1758DB15001190E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C329495B1758DB15001190E6 /* Build configuration list for PBXProject "templated" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32949671758DB15001190E6 /* Debug */,
+				C32949681758DB15001190E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C32949691758DB15001190E6 /* Build configuration list for PBXNativeTarget "templated" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C329496A1758DB15001190E6 /* Debug */,
+				C329496B1758DB15001190E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C32949581758DB15001190E6 /* Project object */;
+}

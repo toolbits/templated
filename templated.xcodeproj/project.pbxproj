@@ -7,22 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C329498C1758DBE7001190E6 /* ExtentManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C32949721758DBE7001190E6 /* ExtentManager.cpp */; };
-		C329498D1758DBE7001190E6 /* getmntopts.c in Sources */ = {isa = PBXBuildFile; fileRef = C32949751758DBE7001190E6 /* getmntopts.c */; };
-		C329498E1758DBE7001190E6 /* humanize_number.c in Sources */ = {isa = PBXBuildFile; fileRef = C32949771758DBE7001190E6 /* humanize_number.c */; };
-		C329498F1758DBE7001190E6 /* pidfile.c in Sources */ = {isa = PBXBuildFile; fileRef = C32949811758DBE7001190E6 /* pidfile.c */; };
-		C32949901758DBE7001190E6 /* realhostname.c in Sources */ = {isa = PBXBuildFile; fileRef = C32949831758DBE7001190E6 /* realhostname.c */; };
-		C32949911758DBE7001190E6 /* reexec_to_match_kernel.c in Sources */ = {isa = PBXBuildFile; fileRef = C32949861758DBE7001190E6 /* reexec_to_match_kernel.c */; };
-		C32949921758DBE7001190E6 /* trimdomain.c in Sources */ = {isa = PBXBuildFile; fileRef = C32949881758DBE7001190E6 /* trimdomain.c */; };
-		C32949931758DBE7001190E6 /* wipefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C329498A1758DBE7001190E6 /* wipefs.cpp */; };
-		C329499B1758DCF3001190E6 /* framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C32949971758DCF3001190E6 /* framework.cpp */; };
-		C329499C1758DCF3001190E6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C32949991758DCF3001190E6 /* main.cpp */; };
+		C3AF263F179452CF0054D90F /* IRXDaemon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AF261E179452CF0054D90F /* IRXDaemon.cpp */; };
+		C3AF2640179452CF0054D90F /* ExtentManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AF2621179452CF0054D90F /* ExtentManager.cpp */; };
+		C3AF2641179452CF0054D90F /* getmntopts.c in Sources */ = {isa = PBXBuildFile; fileRef = C3AF2624179452CF0054D90F /* getmntopts.c */; };
+		C3AF2642179452CF0054D90F /* humanize_number.c in Sources */ = {isa = PBXBuildFile; fileRef = C3AF2626179452CF0054D90F /* humanize_number.c */; };
+		C3AF2643179452CF0054D90F /* pidfile.c in Sources */ = {isa = PBXBuildFile; fileRef = C3AF2630179452CF0054D90F /* pidfile.c */; };
+		C3AF2644179452CF0054D90F /* realhostname.c in Sources */ = {isa = PBXBuildFile; fileRef = C3AF2632179452CF0054D90F /* realhostname.c */; };
+		C3AF2645179452CF0054D90F /* reexec_to_match_kernel.c in Sources */ = {isa = PBXBuildFile; fileRef = C3AF2635179452CF0054D90F /* reexec_to_match_kernel.c */; };
+		C3AF2646179452CF0054D90F /* trimdomain.c in Sources */ = {isa = PBXBuildFile; fileRef = C3AF2637179452CF0054D90F /* trimdomain.c */; };
+		C3AF2647179452CF0054D90F /* wipefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AF2639179452CF0054D90F /* wipefs.cpp */; };
+		C3AF2648179452CF0054D90F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AF263B179452CF0054D90F /* main.cpp */; };
+		C3AF264F179455230054D90F /* templated.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AF264D179455230054D90F /* templated.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C32949951758DBE8001190E6 /* PBXContainerItemProxy */ = {
+		C3AF264A179452D00054D90F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C329497C1758DBE7001190E6 /* libutil.xcodeproj */;
+			containerPortal = C3AF262B179452CF0054D90F /* libutil.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BA79F9C513BB718B006A292D;
 			remoteInfo = util;
@@ -43,23 +44,36 @@
 
 /* Begin PBXFileReference section */
 		C32949601758DB15001190E6 /* templated */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = templated; sourceTree = BUILT_PRODUCTS_DIR; };
-		C32949721758DBE7001190E6 /* ExtentManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExtentManager.cpp; sourceTree = "<group>"; };
-		C32949731758DBE7001190E6 /* ExtentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtentManager.h; sourceTree = "<group>"; };
-		C32949751758DBE7001190E6 /* getmntopts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getmntopts.c; sourceTree = "<group>"; };
-		C32949771758DBE7001190E6 /* humanize_number.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = humanize_number.c; sourceTree = "<group>"; };
-		C32949791758DBE7001190E6 /* libutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libutil.h; sourceTree = "<group>"; };
-		C329497C1758DBE7001190E6 /* libutil.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = libutil.xcodeproj; sourceTree = "<group>"; };
-		C329497F1758DBE7001190E6 /* mntopts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mntopts.h; sourceTree = "<group>"; };
-		C32949811758DBE7001190E6 /* pidfile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pidfile.c; sourceTree = "<group>"; };
-		C32949831758DBE7001190E6 /* realhostname.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = realhostname.c; sourceTree = "<group>"; };
-		C32949861758DBE7001190E6 /* reexec_to_match_kernel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reexec_to_match_kernel.c; sourceTree = "<group>"; };
-		C32949881758DBE7001190E6 /* trimdomain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trimdomain.c; sourceTree = "<group>"; };
-		C329498A1758DBE7001190E6 /* wipefs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wipefs.cpp; sourceTree = "<group>"; };
-		C329498B1758DBE7001190E6 /* wipefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wipefs.h; sourceTree = "<group>"; };
-		C32949971758DCF3001190E6 /* framework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = framework.cpp; sourceTree = "<group>"; };
-		C32949981758DCF3001190E6 /* framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = framework.h; sourceTree = "<group>"; };
-		C32949991758DCF3001190E6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		C329499A1758DCF3001190E6 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		C3AF261E179452CF0054D90F /* IRXDaemon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRXDaemon.cpp; sourceTree = "<group>"; };
+		C3AF261F179452CF0054D90F /* IRXDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRXDaemon.h; sourceTree = "<group>"; };
+		C3AF2621179452CF0054D90F /* ExtentManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExtentManager.cpp; sourceTree = "<group>"; };
+		C3AF2622179452CF0054D90F /* ExtentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtentManager.h; sourceTree = "<group>"; };
+		C3AF2623179452CF0054D90F /* getmntopts.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = getmntopts.3; sourceTree = "<group>"; };
+		C3AF2624179452CF0054D90F /* getmntopts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getmntopts.c; sourceTree = "<group>"; };
+		C3AF2625179452CF0054D90F /* humanize_number.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = humanize_number.3; sourceTree = "<group>"; };
+		C3AF2626179452CF0054D90F /* humanize_number.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = humanize_number.c; sourceTree = "<group>"; };
+		C3AF2627179452CF0054D90F /* libutil.exports */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libutil.exports; sourceTree = "<group>"; };
+		C3AF2628179452CF0054D90F /* libutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libutil.h; sourceTree = "<group>"; };
+		C3AF2629179452CF0054D90F /* libutil.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = libutil.plist; sourceTree = "<group>"; };
+		C3AF262A179452CF0054D90F /* libutil.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libutil.txt; sourceTree = "<group>"; };
+		C3AF262B179452CF0054D90F /* libutil.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = libutil.xcodeproj; sourceTree = "<group>"; };
+		C3AF262E179452CF0054D90F /* mntopts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mntopts.h; sourceTree = "<group>"; };
+		C3AF262F179452CF0054D90F /* pidfile.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pidfile.3; sourceTree = "<group>"; };
+		C3AF2630179452CF0054D90F /* pidfile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pidfile.c; sourceTree = "<group>"; };
+		C3AF2631179452CF0054D90F /* realhostname.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = realhostname.3; sourceTree = "<group>"; };
+		C3AF2632179452CF0054D90F /* realhostname.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = realhostname.c; sourceTree = "<group>"; };
+		C3AF2633179452CF0054D90F /* realhostname_sa.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = realhostname_sa.3; sourceTree = "<group>"; };
+		C3AF2634179452CF0054D90F /* reexec_to_match_kernel.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reexec_to_match_kernel.3; sourceTree = "<group>"; };
+		C3AF2635179452CF0054D90F /* reexec_to_match_kernel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reexec_to_match_kernel.c; sourceTree = "<group>"; };
+		C3AF2636179452CF0054D90F /* trimdomain.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trimdomain.3; sourceTree = "<group>"; };
+		C3AF2637179452CF0054D90F /* trimdomain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trimdomain.c; sourceTree = "<group>"; };
+		C3AF2638179452CF0054D90F /* wipefs.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wipefs.3; sourceTree = "<group>"; };
+		C3AF2639179452CF0054D90F /* wipefs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wipefs.cpp; sourceTree = "<group>"; };
+		C3AF263A179452CF0054D90F /* wipefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wipefs.h; sourceTree = "<group>"; };
+		C3AF263B179452CF0054D90F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C3AF263E179452CF0054D90F /* libutil-30.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; name = "libutil-30.tar.gz"; path = "libs/IRX/IRXDaemon/~original/libutil-30.tar.gz"; sourceTree = SOURCE_ROOT; };
+		C3AF264D179455230054D90F /* templated.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = templated.cpp; sourceTree = "<group>"; };
+		C3AF264E179455230054D90F /* templated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = templated.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +107,8 @@
 		C32949621758DB15001190E6 /* templated */ = {
 			isa = PBXGroup;
 			children = (
-				C329499A1758DCF3001190E6 /* main.h */,
-				C32949991758DCF3001190E6 /* main.cpp */,
-				C32949981758DCF3001190E6 /* framework.h */,
-				C32949971758DCF3001190E6 /* framework.cpp */,
+				C3AF264D179455230054D90F /* templated.cpp */,
+				C3AF264E179455230054D90F /* templated.h */,
 			);
 			path = templated;
 			sourceTree = "<group>";
@@ -104,38 +116,86 @@
 		C32949701758DB94001190E6 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				C32949711758DBE7001190E6 /* libutil-30 */,
+				C3AF261B179452CF0054D90F /* IRX */,
 			);
 			name = libs;
 			sourceTree = "<group>";
 		};
-		C32949711758DBE7001190E6 /* libutil-30 */ = {
+		C3AF261B179452CF0054D90F /* IRX */ = {
 			isa = PBXGroup;
 			children = (
-				C32949721758DBE7001190E6 /* ExtentManager.cpp */,
-				C32949731758DBE7001190E6 /* ExtentManager.h */,
-				C32949751758DBE7001190E6 /* getmntopts.c */,
-				C32949771758DBE7001190E6 /* humanize_number.c */,
-				C32949791758DBE7001190E6 /* libutil.h */,
-				C329497C1758DBE7001190E6 /* libutil.xcodeproj */,
-				C329497F1758DBE7001190E6 /* mntopts.h */,
-				C32949811758DBE7001190E6 /* pidfile.c */,
-				C32949831758DBE7001190E6 /* realhostname.c */,
-				C32949861758DBE7001190E6 /* reexec_to_match_kernel.c */,
-				C32949881758DBE7001190E6 /* trimdomain.c */,
-				C329498A1758DBE7001190E6 /* wipefs.cpp */,
-				C329498B1758DBE7001190E6 /* wipefs.h */,
+				C3AF261C179452CF0054D90F /* IRXDaemon */,
+			);
+			name = IRX;
+			path = libs/IRX;
+			sourceTree = "<group>";
+		};
+		C3AF261C179452CF0054D90F /* IRXDaemon */ = {
+			isa = PBXGroup;
+			children = (
+				C3AF261D179452CF0054D90F /* src */,
+				C3AF263D179452CF0054D90F /* ~original */,
+			);
+			path = IRXDaemon;
+			sourceTree = "<group>";
+		};
+		C3AF261D179452CF0054D90F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C3AF261E179452CF0054D90F /* IRXDaemon.cpp */,
+				C3AF261F179452CF0054D90F /* IRXDaemon.h */,
+				C3AF2620179452CF0054D90F /* libutil-30 */,
+				C3AF263B179452CF0054D90F /* main.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		C3AF2620179452CF0054D90F /* libutil-30 */ = {
+			isa = PBXGroup;
+			children = (
+				C3AF2621179452CF0054D90F /* ExtentManager.cpp */,
+				C3AF2622179452CF0054D90F /* ExtentManager.h */,
+				C3AF2623179452CF0054D90F /* getmntopts.3 */,
+				C3AF2624179452CF0054D90F /* getmntopts.c */,
+				C3AF2625179452CF0054D90F /* humanize_number.3 */,
+				C3AF2626179452CF0054D90F /* humanize_number.c */,
+				C3AF2627179452CF0054D90F /* libutil.exports */,
+				C3AF2628179452CF0054D90F /* libutil.h */,
+				C3AF2629179452CF0054D90F /* libutil.plist */,
+				C3AF262A179452CF0054D90F /* libutil.txt */,
+				C3AF262B179452CF0054D90F /* libutil.xcodeproj */,
+				C3AF262E179452CF0054D90F /* mntopts.h */,
+				C3AF262F179452CF0054D90F /* pidfile.3 */,
+				C3AF2630179452CF0054D90F /* pidfile.c */,
+				C3AF2631179452CF0054D90F /* realhostname.3 */,
+				C3AF2632179452CF0054D90F /* realhostname.c */,
+				C3AF2633179452CF0054D90F /* realhostname_sa.3 */,
+				C3AF2634179452CF0054D90F /* reexec_to_match_kernel.3 */,
+				C3AF2635179452CF0054D90F /* reexec_to_match_kernel.c */,
+				C3AF2636179452CF0054D90F /* trimdomain.3 */,
+				C3AF2637179452CF0054D90F /* trimdomain.c */,
+				C3AF2638179452CF0054D90F /* wipefs.3 */,
+				C3AF2639179452CF0054D90F /* wipefs.cpp */,
+				C3AF263A179452CF0054D90F /* wipefs.h */,
 			);
 			path = "libutil-30";
 			sourceTree = "<group>";
 		};
-		C329497D1758DBE7001190E6 /* Products */ = {
+		C3AF262C179452CF0054D90F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C32949961758DBE8001190E6 /* libutil1.0.dylib */,
+				C3AF264B179452D00054D90F /* libutil1.0.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		C3AF263D179452CF0054D90F /* ~original */ = {
+			isa = PBXGroup;
+			children = (
+				C3AF263E179452CF0054D90F /* libutil-30.tar.gz */,
+			);
+			path = "~original";
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -178,8 +238,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C329497D1758DBE7001190E6 /* Products */;
-					ProjectRef = C329497C1758DBE7001190E6 /* libutil.xcodeproj */;
+					ProductGroup = C3AF262C179452CF0054D90F /* Products */;
+					ProjectRef = C3AF262B179452CF0054D90F /* libutil.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -190,11 +250,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C32949961758DBE8001190E6 /* libutil1.0.dylib */ = {
+		C3AF264B179452D00054D90F /* libutil1.0.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
 			path = libutil1.0.dylib;
-			remoteRef = C32949951758DBE8001190E6 /* PBXContainerItemProxy */;
+			remoteRef = C3AF264A179452D00054D90F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -204,16 +264,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C329498C1758DBE7001190E6 /* ExtentManager.cpp in Sources */,
-				C329498D1758DBE7001190E6 /* getmntopts.c in Sources */,
-				C329498E1758DBE7001190E6 /* humanize_number.c in Sources */,
-				C329498F1758DBE7001190E6 /* pidfile.c in Sources */,
-				C32949901758DBE7001190E6 /* realhostname.c in Sources */,
-				C32949911758DBE7001190E6 /* reexec_to_match_kernel.c in Sources */,
-				C32949921758DBE7001190E6 /* trimdomain.c in Sources */,
-				C32949931758DBE7001190E6 /* wipefs.cpp in Sources */,
-				C329499B1758DCF3001190E6 /* framework.cpp in Sources */,
-				C329499C1758DCF3001190E6 /* main.cpp in Sources */,
+				C3AF263F179452CF0054D90F /* IRXDaemon.cpp in Sources */,
+				C3AF2640179452CF0054D90F /* ExtentManager.cpp in Sources */,
+				C3AF2641179452CF0054D90F /* getmntopts.c in Sources */,
+				C3AF2642179452CF0054D90F /* humanize_number.c in Sources */,
+				C3AF2643179452CF0054D90F /* pidfile.c in Sources */,
+				C3AF2644179452CF0054D90F /* realhostname.c in Sources */,
+				C3AF2645179452CF0054D90F /* reexec_to_match_kernel.c in Sources */,
+				C3AF2646179452CF0054D90F /* trimdomain.c in Sources */,
+				C3AF2647179452CF0054D90F /* wipefs.cpp in Sources */,
+				C3AF2648179452CF0054D90F /* main.cpp in Sources */,
+				C3AF264F179455230054D90F /* templated.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +307,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libutil-30\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libs/IRX/IRXDaemon/src/libutil-30\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = "";
@@ -273,7 +334,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libutil-30\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libs/IRX/IRXDaemon/src/libutil-30\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = "";
 			};

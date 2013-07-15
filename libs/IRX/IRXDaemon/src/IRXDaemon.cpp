@@ -14,7 +14,7 @@
 **      This source code is for Xcode.
 **      Xcode 4.6.2 (Apple LLVM compiler 4.2, LLVM GCC 4.2)
 **
-**      framework.cpp
+**      IRXDaemon.cpp
 **
 **      ------------------------------------------------------------------------
 **
@@ -44,35 +44,51 @@
 **      あるいはソフトウェアの使用またはその他の扱いによって生じる一切の請求、損害、その他の義務について何らの責任も負わないものとします。
 */
 
-#include "framework.h"
-#include <stdlib.h>
+#include "IRXDaemon.h"
+#include <stdarg.h>
 #include <unistd.h>
-#include "main.h"
 
-int usage(int argc, char const* argv[])
+namespace ir {
+
+/*protected */IRXDaemon::IRXDaemon(void)
 {
-    // TODO: print how to use this command, setup option parameters here.
-    //       if some error occurred return EX_USAGE.
+}
+
+/*public virtual */IRXDaemon::~IRXDaemon(void)
+{
+}
+
+/*public virtual */int IRXDaemon::usage(int argc, char const* argv[])
+{
     return EXIT_SUCCESS;
 }
 
-int initialize(void)
+/*public virtual */int IRXDaemon::initialize(void)
 {
-    // TODO: initialize your resources here.
-    //       if some error occurred return EXIT_FAILURE, etc...
     return EXIT_SUCCESS;
 }
 
-void terminate(void)
+/*public virtual */void IRXDaemon::terminate(void)
 {
-    // TODO: terminate or release your resources here.
     return;
 }
 
-void loop(void)
+/*public virtual */void IRXDaemon::loop(void)
 {
-    // TODO: daemon main task.
-    //       continuously called.
-    sleep(33);
+    sleep(1);
     return;
 }
+
+/*public virtual */void IRXDaemon::log(int priority, char const* format, ...)
+{
+    va_list ap;
+    
+    va_start(ap, format);
+    openlog(getprogname(), LOG_CONS | LOG_PERROR | LOG_PID, LOG_DAEMON);
+    vsyslog(priority, format, ap);
+    closelog();
+    va_end(ap);
+    return;
+}
+
+}// end of namespace

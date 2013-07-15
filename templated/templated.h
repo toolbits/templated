@@ -14,7 +14,7 @@
 **      This source code is for Xcode.
 **      Xcode 4.6.2 (Apple LLVM compiler 4.2, LLVM GCC 4.2)
 **
-**      main.h
+**      templated.h
 **
 **      ------------------------------------------------------------------------
 **
@@ -44,11 +44,17 @@
 **      あるいはソフトウェアの使用またはその他の扱いによって生じる一切の請求、損害、その他の義務について何らの責任も負わないものとします。
 */
 
-#ifndef __MAIN_H
-#define __MAIN_H
+#ifndef __TEMPLATED_H
+#define __TEMPLATED_H
 
-#include <syslog.h>
+#include "IRXDaemon.h"
 
-extern  void                            log             (int priority, char const* format, ...);
+class templated : public ir::IRXDaemon {
+    public:
+        virtual int                     usage                           (int argc, char const* argv[]);
+        virtual int                     initialize                      (void);
+        virtual void                    terminate                       (void);
+        virtual void                    loop                            (void);
+};
 
 #endif

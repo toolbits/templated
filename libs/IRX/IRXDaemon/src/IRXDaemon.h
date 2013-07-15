@@ -14,7 +14,7 @@
 **      This source code is for Xcode.
 **      Xcode 4.6.2 (Apple LLVM compiler 4.2, LLVM GCC 4.2)
 **
-**      framework.h
+**      IRXDaemon.h
 **
 **      ------------------------------------------------------------------------
 **
@@ -44,14 +44,38 @@
 **      あるいはソフトウェアの使用またはその他の扱いによって生じる一切の請求、損害、その他の義務について何らの責任も負わないものとします。
 */
 
-#ifndef __FRAMEWORK_H
-#define __FRAMEWORK_H
+#ifndef __IR_IRXDAEMON_H
+#define __IR_IRXDAEMON_H
 
+#include <new>
+#include <stdlib.h>
 #include <sysexits.h>
+#include <syslog.h>
 
-extern  int                             usage           (int argc, char const* argv[]);
-extern  int                             initialize      (void);
-extern  void                            terminate       (void);
-extern  void                            loop            (void);
+namespace ir {
+
+#define IRXDAEMON(param)\
+ir::IRXDaemon* ir::IRXDaemon::factory(void)\
+{\
+    return new(std::nothrow) param;\
+}
+
+class IRXDaemon {
+    public:
+        virtual                         ~IRXDaemon                      (void) = 0;
+        virtual int                     usage                           (int argc, char const* argv[]);
+        virtual int                     initialize                      (void);
+        virtual void                    terminate                       (void);
+        virtual void                    loop                            (void);
+        virtual void                    log                             (int priority, char const* format, ...);
+        static  IRXDaemon*              factory                         (void);
+    protected:
+        explicit                        IRXDaemon                       (void);
+    private:
+                                        IRXDaemon                       (IRXDaemon const&);
+                IRXDaemon&              operator=                       (IRXDaemon const&);
+};
+
+}// end of namespace
 
 #endif

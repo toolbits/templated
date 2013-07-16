@@ -50,7 +50,7 @@
 #include "IRXDaemon.h"
 
 class templated : public ir::IRXDaemon {
-    public:
+    protected:
         virtual int                     usage                           (int argc, char const* argv[]);
         virtual int                     initialize                      (void);
         virtual void                    terminate                       (void);

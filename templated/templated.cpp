@@ -47,29 +47,35 @@
 #include "templated.h"
 #include <unistd.h>
 
-IRXDAEMON(templated)
+#if 1
+IRXDAEMON_DYNAMIC(templated)
+#else
+static templated g_templated;
 
-/*public virtual */int templated::usage(int argc, char const* argv[])
+IRXDAEMON_STATIC(&g_templated);
+#endif
+
+/*protected virtual */int templated::usage(int argc, char const* argv[])
 {
     // TODO: print how to use this command, setup option parameters here.
     //       if some error occurred return EX_USAGE.
     return EXIT_SUCCESS;
 }
 
-/*public virtual */int templated::initialize(void)
+/*protected virtual */int templated::initialize(void)
 {
     // TODO: initialize your resources here.
     //       if some error occurred return EXIT_FAILURE, etc...
     return EXIT_SUCCESS;
 }
 
-/*public virtual */void templated::terminate(void)
+/*protected virtual */void templated::terminate(void)
 {
     // TODO: terminate or release your resources here.
     return;
 }
 
-/*public virtual */void templated::loop(void)
+/*protected virtual */void templated::loop(void)
 {
     // TODO: daemon main task.
     //       continuously called.

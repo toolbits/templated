@@ -80,7 +80,7 @@ int main(int argc, char const* argv[])
     int i;
     int result(EXIT_SUCCESS);
     
-    if ((instance = ir::IRXDaemon::factory()) != NULL) {
+    if ((instance = ir::IRXDaemon::_new()) != NULL) {
         operation = OPERATION_UNKNOWN;
         mode = MODE_UNKNOWN;
         if (argc > 1) {
@@ -222,7 +222,7 @@ int main(int argc, char const* argv[])
                 }
             }
         }
-        delete instance;
+        ir::IRXDaemon::_delete(instance);
     }
     else {
         result = EXIT_FAILURE;

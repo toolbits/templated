@@ -45,7 +45,6 @@
 */
 
 #include "IRXDaemon.h"
-#include <stdarg.h>
 #include <unistd.h>
 
 namespace ir {
@@ -56,6 +55,7 @@ namespace ir {
 
 /*public virtual */IRXDaemon::~IRXDaemon(void)
 {
+    terminate();
 }
 
 /*public virtual */int IRXDaemon::usage(int argc, char const* argv[])
@@ -79,15 +79,27 @@ namespace ir {
     return;
 }
 
-/*public virtual */void IRXDaemon::log(int priority, char const* format, ...)
+/*public */void IRXDaemon::log(int priority, char const* format, ...)
 {
     va_list ap;
     
     va_start(ap, format);
+    syslog(priority, format, ap);
+    va_end(ap);
+    return;
+}
+
+/*public */void IRXDaemon::log(int priority, char const* format, va_list ap)
+{
+    syslog(priority, format, ap);
+    return;
+}
+
+/*protected virtual */void IRXDaemon::syslog(int priority, char const* format, va_list ap)
+{
     openlog(getprogname(), LOG_CONS | LOG_PERROR | LOG_PID, LOG_DAEMON);
     vsyslog(priority, format, ap);
     closelog();
-    va_end(ap);
     return;
 }
 

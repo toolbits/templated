@@ -48,29 +48,53 @@
 #define __IR_IRXDAEMON_H
 
 #include <new>
+#include <stdarg.h>
 #include <stdlib.h>
 #include <sysexits.h>
 #include <syslog.h>
 
 namespace ir {
 
-#define IRXDAEMON(param)\
-ir::IRXDaemon* ir::IRXDaemon::factory(void)\
+#define IRXDAEMON_STATIC(param)\
+ir::IRXDaemon* ir::IRXDaemon::_new(void)\
+{\
+    return (param);\
+}\
+\
+void ir::IRXDaemon::_delete(IRXDaemon* instance)\
+{\
+    return;\
+}
+
+#define IRXDAEMON_DYNAMIC(param)\
+ir::IRXDaemon* ir::IRXDaemon::_new(void)\
 {\
     return new(std::nothrow) param;\
+}\
+\
+void ir::IRXDaemon::_delete(IRXDaemon* instance)\
+{\
+    delete instance;\
+    return;\
 }
 
 class IRXDaemon {
+    public:
+        typedef IRXDaemon               self;
+    
     public:
         virtual                         ~IRXDaemon                      (void) = 0;
         virtual int                     usage                           (int argc, char const* argv[]);
         virtual int                     initialize                      (void);
         virtual void                    terminate                       (void);
         virtual void                    loop                            (void);
-        virtual void                    log                             (int priority, char const* format, ...);
-        static  IRXDaemon*              factory                         (void);
+                void                    log                             (int priority, char const* format, ...);
+                void                    log                             (int priority, char const* format, va_list ap);
+        static  IRXDaemon*              _new                            (void);
+        static  void                    _delete                         (IRXDaemon* instance);
     protected:
         explicit                        IRXDaemon                       (void);
+        virtual void                    syslog                          (int priority, char const* format, va_list ap);
     private:
                                         IRXDaemon                       (IRXDaemon const&);
                 IRXDaemon&              operator=                       (IRXDaemon const&);
